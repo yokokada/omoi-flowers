@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css'
-// ルーティングのためのインポート
+import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AnimationComponent from './components/AnimationComponent';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -11,8 +10,8 @@ function App() {
     <Router>
        <ErrorBoundary>
           <Routes>
-            <Route exact path="/login" component={Login} />
-            <Route path="/" component={AnimationComponent} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<AnimationComponent />} />
           </Routes>
         </ErrorBoundary> 
     </Router>
@@ -20,4 +19,5 @@ function App() {
 }
 
 export default App;
+
 
