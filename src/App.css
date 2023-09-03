@@ -1,0 +1,81 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fde9e9;
+}
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.base_flowers {
+  position: relative;
+  display: flex;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+}
+
+.base_flowers img {
+  margin: 0 auto;
+}
+
+.countdown {
+  /* 右側に固定して表示するためのスタイル */
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.omoi-flowers button {
+  margin-top: -50px;
+  /* 円形のボタンにするためのスタイル */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  /* 縁無し */
+  border: none;
+  /* ゆっくりとしたアニメーション効果を追加 */
+  transition: transform 0.3s ease;  /* 0.3秒のアニメーション効果を指定 */
+  /* 立体的 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  /* 触ると色が変わるホバー */
+  &:hover {
+    background-color: #f39459;
+  }
+
+  /* 触ったときにゆっくりかつさらに大きくなる */
+  &:active {
+    transform: scale(1.2);  /* 1.1 から 1.2 に変更して拡大の大きさを増やす */
+  }
+}
+
+/* テーブル全体に関するスタイル */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* セルの枠線のスタイル */
+.history-table th, .history-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #f9f9f9;
+}
+
+/* ヘッダーの背景色とテキストスタイル */
+.history-table th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+/* ホバー時の行のハイライト */
+.history-table tr:hover {
+  background-color: #e6e6e6;
+}
+
