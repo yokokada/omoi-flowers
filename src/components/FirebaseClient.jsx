@@ -9,7 +9,7 @@ const config = {
     projectId: "omoi-flowers",
     storageBucket: "omoi-flowers.appspot.com",
     messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_SENDER_ID,
-    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID 
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
     measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
