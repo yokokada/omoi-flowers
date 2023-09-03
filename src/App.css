@@ -48,8 +48,9 @@ body {
   height: 100px;
   /* 縁無し */
   border: none;
-  /* ゆっくりとしたアニメーション効果を追加 */
-  transition: transform 0.3s ease;  /* 0.3秒のアニメーション効果を指定 */
+  /* 脈打つように広がる波紋アニメーション */
+  animation: ripple 1s ease-out;
+
   /* 立体的 */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
@@ -82,10 +83,12 @@ body {
 .history-table th {
   background-color: #f2f2f2;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 /* ホバー時の行のハイライト */
 .history-table tr:hover {
   background-color: #e6e6e6;
 }
-
